@@ -25,7 +25,7 @@ function validatePassword() {
 
     if(pass != confirm) {
 
-        confirmPassInput.setCustomValidity("Hello");
+        confirmPassInput.setCustomValidity("Passwords do not match.");
     }
     else {
 
