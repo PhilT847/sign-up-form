@@ -147,8 +147,9 @@ label {
 
     .content-image {
         width: 100vw;
-        height: 20vh;
+        height: 10em;
         background-size: 100vw;
+        flex-shrink: 0;
     }
 
     .logo {
@@ -156,7 +157,7 @@ label {
         height: 100%;
     }
 
-    .content-form {
+    .content-form {  
         margin: 0 auto;
         gap: 2em;
         width: 70vw;
