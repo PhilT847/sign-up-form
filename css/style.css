@@ -1,38 +1,156 @@
 /* style.css */
 
 body {
-    margin: 0;
-    padding: 0;
+    --marsh-green: rgb(10,15,10);
+    --marsh-gray: rgb(200,200,200);
+    --marsh-orange: rgb(223, 164, 75);
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: var(--marsh-green);
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content, .content-image, 
+.content-form, .logo,
+.opening-statement, form,
+.input {
     display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    --marsh-yellow: rgb(62, 66, 27);
 }
 
-#content-image {
-
-    width: 0;
+.content-image, .logo, form {
+    flex-flow: row wrap;
 }
 
-/* desktop */
-@media (min-width: 768px) {
-
-    #content-image {
-
-        width: max(10vw, 30vw);
-    }
+.content {
+    width: 100vw;
+    height: 100vh;
 }
 
-#content-form {
-    display: flex;
+.content-image {
+    width: 40vw;
+    position: relative;
+    background-image: url(../images/seth-biggers-marsh.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+.logo {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 20vh;
+    width: 100%;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.bird {
+    color: white;
+    height: 12vh;
+}
+
+h1 {
+    color: white;
+}
+
+.content-form {
+    width: 50vw;
+    padding: 10% 5%;
+    gap: 3.5em;
     flex-direction: column;
+    justify-content: center;
 }
 
 .opening-statement {
-
+    flex-direction: column;
+    gap: 0.75em;
+    font-size: 1.5em;
+    line-height: 1.1em;
 }
 
-.button {
-    background-color: var(--marsh-yellow);
+button {
+    font-size: 1em;
+    font-weight: 800;
+    color: var(--marsh-orange);
+    border: 4px solid var(--marsh-orange);
+    background-color: var(--marsh-green);
+    width: 12em;
+    height: 3em;
+    border-radius: 4px;
+}
+
+form {
+    column-gap: 10%;
+    row-gap: 2em;
+}
+
+.input {
+    margin: 0 auto;
+    flex-direction: column;
+    width: 45%;
+}
+
+input {
+    color: white;
+    background-color: black;
+    border: 1px solid var(--marsh-gray);
+    border-radius: 2px;
+}
+
+label {
+    color: var(--marsh-gray);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.login {
+    color: var(--marsh-orange);
+    font-weight: 800;
+}
+
+/* smaller screens */
+@media only screen and (max-width: 600px) {
+
+    .content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .content-image {
+        width: 100vw;
+        height: 20vh;
+        background-size: 100vw;
+    }
+
+    .logo {
+        top: 0vh;
+        height: 100%;
+    }
+
+    .content-form {
+        margin: 0 auto;
+        gap: 2em;
+        width: 70vw;
+    }
+
+    .opening-statement {
+        font-size: 1.2em;
+    }
+
+    form {
+        flex-direction: column;
+        flex-flow: column wrap;
+        padding: 0.1em;
+        gap: 2em;
+    }
+
+    .input {
+        width: 100%;
+    }
 }
 

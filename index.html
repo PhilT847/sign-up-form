@@ -5,18 +5,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Sign-Up Form</title>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
         
-        <div id="content-image">
-            <img src="/images/les-argonautes-marsh.jpg" 
-                alt="Marsh from Les Argonautes on Unsplash"/>
-        </div>
+        <div class="content">
 
-        <div id="content-form">
-            Hi
+            <div class="content-image">
+                <div class="logo">
+                    <div class="bird">Hey</div>
+                    <h1>Name</h1>
+                </div>
+            </div>
+    
+            <div class="content-form">
+                <div class="opening-statement">
+                    <div>
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt 
+                        ut labore.
+                    </div>
+                    <div>Join the flock today.</div>
+                </div>
+
+                <form>
+                    <div class="input">
+                        <label for="f-name">First Name</label>
+                        <input type="text" name="f-name" id="f-name" required/>
+                    </div>
+                    <div class="input">
+                        <label for="l-name">Last Name</label>
+                        <input type="text" name="l-name" id="l-name" required/>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required/>
+                    </div>
+                    <div class="input">
+                        <label for="phone-no">Phone Number</label>
+                        <input type="number" name="phone-no" id="phone-no" required/>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required/>
+                    </div>
+                    <div class="input">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input type="password" name="password-confirm" id="password-confirm" required/>
+                    </div>
+
+                    <button type="submit">Create Account</button>
+                </form>
+
+                <div>
+                    <span>Already a member?</span>
+                    <span class="login">Log in</span>
+                </div>
+                
+            </div>
+
         </div>
 
     </body>
