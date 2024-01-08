@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign-Up Form</title>
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js" defer></script>
     </head>
 
     <body>
@@ -34,27 +35,53 @@
                 <form>
                     <div class="input">
                         <label for="f-name">First Name</label>
-                        <input type="text" name="f-name" id="f-name" required/>
+                        <input type="text" 
+                                name="f-name" 
+                                id="f-name" 
+                                placeholder=" "
+                                required/>
                     </div>
                     <div class="input">
                         <label for="l-name">Last Name</label>
-                        <input type="text" name="l-name" id="l-name" required/>
+                        <input type="text" 
+                                name="l-name" 
+                                id="l-name" 
+                                placeholder=" "
+                                required/>
                     </div>
                     <div class="input">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required/>
+                        <input type="email" 
+                                name="email" 
+                                id="email" 
+                                placeholder=" "
+                                required/>
                     </div>
                     <div class="input">
                         <label for="phone-no">Phone Number</label>
-                        <input type="number" name="phone-no" id="phone-no" required/>
+                        <input type="number" 
+                                name="phone-no" 
+                                id="phone-no" 
+                                minlength="10"
+                                placeholder=" " 
+                                required/>
                     </div>
                     <div class="input">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required/>
+                        <input type="password" 
+                                name="password" 
+                                id="password" 
+                                minlength="8" 
+                                placeholder=" "
+                                required/>
                     </div>
                     <div class="input">
                         <label for="password-confirm">Confirm Password</label>
-                        <input type="password" name="password-confirm" id="password-confirm" required/>
+                        <input type="password" 
+                                name="password-confirm" 
+                                id="password-confirm" 
+                                placeholder=" "
+                                required/>
                     </div>
 
                     <button type="submit">Create Account</button>

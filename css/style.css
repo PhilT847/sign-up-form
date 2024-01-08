@@ -101,6 +101,29 @@ input {
     border-radius: 2px;
 }
 
+input:focus {
+    border: 1px solid var(--marsh-gray);
+    box-shadow: 0px 0px 12px var(--marsh-gray);
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+/* 
+    Placeholder is " "
+    Used to prevent :invalid's red border
+    from showing before any input is entered
+*/
+
+input:placeholder-shown {
+    border-color: var(--marsh-gray);
+}
+
 label {
     color: var(--marsh-gray);
     overflow: hidden;
